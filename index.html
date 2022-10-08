@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Домашнє завдання 2</title>
+  <title>Домашнє завдання 5</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
@@ -55,7 +55,7 @@
     <section class="section banner">
       <div class="container">
         <h1 class="banner-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn banner-btn" type="button">Замовити послугу</button>
+        <button class="btn banner-btn" type="button" data-modal-open>Замовити послугу</button>
       </div>
     </section>
     <section class="section advantages">
@@ -119,12 +119,15 @@
         <ul class="what-we-do">
           <li class="what-we-do__item">
             <img src="./images/image1.jpg" alt="Планшет на клавіатура" width="370" />
+            <p class="what-we-do__text">Десктопні додатки</p>
           </li>
           <li class="what-we-do__item">
             <img src="./images/image2.jpg" alt="Ноутбук та телефон" width="370" />
+            <p class="what-we-do__text">Мобільні додатки</p>
           </li>
           <li class="what-we-do__item">
             <img src="./images/image3.jpg" alt="Графічний планшет" width="370" />
+            <p class="what-we-do__text">Дизайнерські рішення</p>
           </li>
         </ul>
       </div>
@@ -390,6 +393,19 @@
       </div>
     </div>
   </footer>
+  <!-- Модальне вікно -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-close-btn" type="button" data-modal-close>
+        <svg class="modal-close-icon" width="11" height="11">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Скрипти -->
+  <script src="./modal.js"></script>
 </body>
 
 </html>
